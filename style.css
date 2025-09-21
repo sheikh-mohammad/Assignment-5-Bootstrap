@@ -269,3 +269,8 @@ footer::selection{
     background-color: #191919 !important;
     color: #777777 !important;
 }
+
+.offcanvas{
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}

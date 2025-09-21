@@ -17,9 +17,37 @@
 
 <body>
 
+    <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body d-flex flex-column justify-content-start align-items-start gap-3">
+            <a href="#" class="text-uppercase text-white text-decoration-none small fw-bold">Home</a>
+            <a href="#" class="text-uppercase text-white text-decoration-none small">About</a>
+            <a href="#" class="text-uppercase text-white text-decoration-none small fw-bold">About</a>
+            <a href="#" class="text-uppercase text-white text-decoration-none small fw-bold">Cars</a>
+            <a href="#" class="text-uppercase text-white text-decoration-none small fw-bold">Service</a>
+            <a href="#" class="text-uppercase text-white text-decoration-none small fw-bold">Team</a>
+            <a href="#" class="text-uppercase text-white text-decoration-none small fw-bold">Blog</a>
+            <a href="#" class="text-uppercase text-white text-decoration-none small fw-bold">Contact</a>
+            <a class="nav-link text-white fw-bold text-uppercase small d-flex justify-content-between align-content-center w-100"
+                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages <i class="fa-solid fa-angle-down small"></i>
+            </a>
+            <ul class="dropdown-menu bg-transparent text-white border-0 rounded-0 flex-column">
+                <li class="text-white fw-bold"><a class="dropdown-item fw-bold text-white small text-capitalize"
+                        href="#">Blog
+                        Single</a></li>
+                <li class="text-white fw-bold"><a class="dropdown-item fw-bold text-white small text-capitalize"
+                        href="#">Elements</a></li>
+            </ul>
+        </div>
+    </div>
     <nav class="navbar w-100 fixed-top navbar-expand-lg">
         <div class="container d-flex justify-content-around">
             <a class="navbar-brand" href="#"><img src="assets/images/logo/logo.png" alt=""></a>
+            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars d-md-none d-inline text-white fs-3"></i>
+            </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 text-uppercase mb-lg-0 small">
                     <li class="nav-item">
@@ -532,8 +560,7 @@
                 </div>
             </div>
         </div>
-        <div
-            class="lower-footer container align-items-center d-flex justify-content-center flex-wrap">
+        <div class="lower-footer container align-items-center d-flex justify-content-center flex-wrap">
             <div class="text-secondary small text-center">Copyright &copy;2025 All rights reserved | This template is
                 made with <i class="fa-regular fa-heart"></i> by <a href="#" class="text-decoration-none">Colorlib</a>
             </div>
