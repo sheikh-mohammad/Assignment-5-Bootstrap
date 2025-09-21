@@ -16,7 +16,7 @@ nav {
     background: rgba(0, 0, 0, 0.8);
 }
 
-::selection {
+body::selection {
     background-color: #FAB700 !important;
     color: white !important;
 }
@@ -243,4 +243,29 @@ nav .dropdown:hover .dropdown-menu {
 
 .blog-body .card h5 {
     transition: all 0.3s ease 0s;
+}
+
+footer {
+    background-color: #04091E;
+    padding: 120px 0px;
+}
+
+.social-icons a i:hover{
+    color: var(--primary) !important;
+}
+
+footer button{
+    background-color: var(--primary);
+    right: -15px;
+    top: 5;
+    height: 40px;
+}
+
+.lower-footer a, .lower-footer i{
+    color: var(--primary);
+}
+
+footer::selection{
+    background-color: #191919 !important;
+    color: #777777 !important;
 }
