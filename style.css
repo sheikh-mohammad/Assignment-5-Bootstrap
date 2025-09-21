@@ -71,3 +71,31 @@ nav .dropdown:hover .dropdown-menu {
     border: 1px solid var(--primary) !important;
     background-color: transparent;
 }
+
+.services-section {
+    padding: 120px 0px;
+}
+
+.service {
+    width: 250px;
+    height: 170px;
+    box-sizing: content-box !important;
+    transition: all 0.3s ease 0s;
+}
+
+.service:hover h5,
+.service:hover span,
+.service:hover i {
+    color: var(--primary);
+}
+
+.service:hover h5,
+.service:hover span,
+.service:hover i{
+    transition: all 0.3s ease 0s;
+}
+
+.service:hover {
+    box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.5);
+    cursor: pointer;
+}
