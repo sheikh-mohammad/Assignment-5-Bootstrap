@@ -5,6 +5,7 @@
 
 :root {
     --primary: #FAB700;
+    --secondary: #222222;
 }
 
 body {
@@ -91,7 +92,7 @@ nav .dropdown:hover .dropdown-menu {
 
 .service:hover h5,
 .service:hover span,
-.service:hover i{
+.service:hover i {
     transition: all 0.3s ease 0s;
 }
 
@@ -100,7 +101,7 @@ nav .dropdown:hover .dropdown-menu {
     cursor: pointer;
 }
 
-.banner-cont{
+.banner-cont {
     padding: 120px 0px;
 }
 
@@ -139,21 +140,50 @@ nav .dropdown:hover .dropdown-menu {
     background-color: var(--primary) !important;
 }
 
-.models-section{
+.models-section {
     padding: 120px 0px;
 }
 
-.carousel h2{
+.carousel h2 {
     color: var(--primary);
 }
 
 .carousel button {
     border: 1px solid transparent !important;
-    background-color: #222222;
+    background-color: var(--secondary);
     transition: all 0.3s ease 0s;
 }
 
 .carousel button:hover {
     color: var(--primary) !important;
     border: 1px solid var(--primary) !important;
+}
+
+.numbers-section {
+    padding: 80px 0px;
+    background-color: var(--primary);
+}
+
+.rating i {
+    color: #777777;
+}
+
+.filled-star {
+    color: #FFA500 !important;
+}
+
+.testinomails-section {
+    padding: 120px 0px;
+}
+
+.testinomails {
+    width: 250px;
+    height: 170px;
+    box-sizing: content-box !important;
+    transition: all 0.3s ease 0s;
+}
+
+.testinomails:hover {
+    box-shadow: 0px 20px 30px 0px rgba(35, 94, 231, 0.2);
+    cursor: pointer;
 }
