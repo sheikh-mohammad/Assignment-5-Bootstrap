@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+:root {
+    --primary: #FAB700;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+::selection {
+    background-color: #FAB700 !important;
+    color: white !important;
+}
+
+nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:hover {
+    color: var(--primary) !important;
+    background-color: transparent !important;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url(assets/images/hero/image.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.hero-form {
+    background-color: rgba(32, 46, 69, 0.4);
+    border: 1px solid #4b5263;
+}
+
+.hero-form button {
+    background-color: var(--primary);
+}
+
+.hero-cont span {
+    letter-spacing: 2px;
+}
+
+.hero-cont button {
+    border: 1px solid transparent !important;
+    background-color: var(--primary);
+    transition: all 0.3s ease 0s;
+}
+
+.hero-cont button:hover {
+    color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+    background-color: transparent;
+}
